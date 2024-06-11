@@ -105,7 +105,7 @@ class App extends React.Component {
         </Badge>
       </Group>
       <Title order={4} ta="center" mt="sm">
-        Perform basic mathematical operations and converts a number to Roman Numeral
+        Perform basic mathematical operations
       </Title>
       <Group mt={10}>
       <Text fs='italic'>Mathematical Operations:</Text>
