@@ -1,54 +1,25 @@
 {
-  "name": "calculator",
-  "version": "0.1.0",
-  "private": true,
-  "proxy": "http://localhost:5000",
-  "dependencies": {
-    "@mantine/core": "^7.10.1",
-    "@mantine/hooks": "^7.10.1",
-    "@reduxjs/toolkit": "^2.2.5",
-    "@tabler/icons": "^3.5.0",
-    "@tabler/icons-react": "^3.5.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.7.2",
-    "dayjs": "^1.11.11",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-redux": "^9.1.2",
-    "react-scripts": "5.0.1",
-    "redux": "^5.0.1",
-    "redux-logger": "^3.0.6",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "postcss": "^8.4.38",
-    "postcss-preset-mantine": "^1.15.0",
-    "postcss-simple-vars": "^7.0.1"
-  }
+    "name": "calculator-backend",
+    "version": "1.0.0",
+    "engines": {
+        "node": "v20.14.0",
+        "npm": "10.7.0"
+    },
+    "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "build": "cd client && npm run build",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+        "start": "node server.js",
+        "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "compression": "^1.7.4",
+        "concurrently": "^8.2.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "nodemon": "^3.1.3"
+    }
 }
