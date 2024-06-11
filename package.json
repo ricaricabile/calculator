@@ -1,11 +1,8 @@
 {
   "name": "calculator",
   "version": "0.1.0",
-  "engines": {
-    "node": "v20.14.0",
-    "npm": "10.7.0"
-  },
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@mantine/core": "^7.10.1",
     "@mantine/hooks": "^7.10.1",
@@ -29,9 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm start && npm install && npm run build"
-
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
