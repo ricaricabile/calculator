@@ -113,7 +113,6 @@ class App extends React.Component {
       <Text fs='italic'>(Subtraction) (-) </Text>
       <Text fs='italic'>(Multiplication) (*) </Text> 
       <Text fs='italic'>(Division) (/)</Text> 
-      <Text fs='italic'>(Convert to Roman Numeral) (C)</Text> 
       </Group>
       <div className={classes.root}>
     <Group className={classes.roots} >
