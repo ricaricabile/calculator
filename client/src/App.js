@@ -6,7 +6,7 @@ import {Badge,
   Group,
   Text,
   Container, Title, SimpleGrid, Input } from '@mantine/core';
-import classes from './StatsControls.module.css';
+import classes from './calculator.module.css';
 import Footer from './footer.component.jsx';
 class App extends React.Component {
   constructor() {
@@ -96,7 +96,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div>
       <Container mt={30} size={700}  sx={{overflow: 'hidden'}} className="mainwindow">
         <SimpleGrid  cols={{ base: 1 }} sx={{width: '100%'}}>
       <Group justify="center">
@@ -156,7 +156,7 @@ class App extends React.Component {
 </SimpleGrid>
     </Container>
  <Footer/>
- </>
+ </div>
     );
   }
 }
